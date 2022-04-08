@@ -24,5 +24,13 @@ namespace PR14
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            double x = Convert.ToDouble(text1.Text);
+            double y = Convert.ToDouble(text2.Text);
+            double s = (x-Math.Pow(10,Math.Sin(x))+Math.Cos(x-y));
+            Lab1.Content = Convert.ToString(s);
+        }
     }
 }
